@@ -9,6 +9,8 @@ setup(
     description = "Archives files of users from certain groups into specified destination folders",
     license = "GPL",
     packages=['archive'],
+    url='https://github.com/twahage/archive',
+    download_url='https://github.com/twahage/archive/archive/v1.0.tar.gz',
     entry_points = {
         'console_scripts' : ['archive = archive.archive:main']
     },
@@ -16,6 +18,8 @@ setup(
     #    ('share/applications/', ['twahage-archive.desktop'])
     #],
     classifiers=[
+        'Development Status :: 3 - Alpha',
+        'Intended Audience :: Developers',
         "License :: OSI Approved :: GNU General Public License (GPL)"
     ]
 )
