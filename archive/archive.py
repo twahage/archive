@@ -59,7 +59,8 @@ def main():
         lockfilename=filename + ".apylock" 
         lockfilepath=dirpath + "/" + lockfilename
         filepath=dirpath + "/" + filename
-        filedestpath="./" + args.dest + "/" + filename
+        #filedestpath="./" + args.dest + "/" + filename
+        filedestpath=args.dest + "/" + filename
         try:
           #create file lock
           lock_fd=os.open(lockfilepath,os.O_CREAT|os.O_EXCL|os.O_RDWR) 
@@ -81,5 +82,5 @@ def main():
         except:
            continue
 
-if __name__='__main__':
+if __name__=='__main__':
   main()
