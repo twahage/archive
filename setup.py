@@ -10,7 +10,7 @@ setup(
     license = "GPL",
     packages=['archive'],
     url='https://github.com/twahage/archive',
-    download_url='https://github.com/twahage/archive/archive/v1.0.tar.gz',
+    download_url='https://github.com/twahage/archive/archive/v1.1.tar.gz',
     entry_points = {
         'console_scripts' : ['archive = archive.archive:main']
     },
